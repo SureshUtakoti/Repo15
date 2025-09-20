@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Lifecycle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .diagram {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .stage {
+      background: #1e3799;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 150px;
+      text-align: center;
+      position: relative;
+    }
+    .arrow {
+      width: 50px;
+      height: 2px;
+      background: #333;
+      margin: auto;
+      position: relative;
+    }
+    .arrow::after {
+      content: "";
+      position: absolute;
+      right: -10px;
+      top: -5px;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 10px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle - Daily Motivation App</h1>
+  <div class="diagram">
+    <div class="stage">Plan</div>
+    <div class="arrow"></div>
+    <div class="stage">Develop</div>
+    <div class="arrow"></div>
+    <div class="stage">Build</div>
+    <div class="arrow"></div>
+    <div class="stage">Test</div>
+    <div class="arrow"></div>
+    <div class="stage">Release</div>
+    <div class="arrow"></div>
+    <div class="stage">Deploy</div>
+    <div class="arrow"></div>
+    <div class="stage">Operate</div>
+    <div class="arrow"></div>
+    <div class="stage">Monitor</div>
+  </div>
+</body>
+</html>
